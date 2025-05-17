@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylehome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand custom-brand-font" href="#">Edrian A. Bagohara</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section text-white d-flex align-items-center justify-content-center text-center">
+        <div class="container hero-content">
+            <h1 class="display-3 custom-heading-font mb-4 animate-fade-in">Capturing Essence in Charcoal</h1>
+            <p class="lead mb-5 animate-fade-in delay-1">Welcome to the artistic world of Edrian A. Bagohara, a traditional artist specializing in charcoal pencil medium.</p>
+            <a href="#gallery" class="btn custom-btn btn-lg animate-fade-in delay-2">View My Work <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 custom-section-heading">About Me</h2>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-md-5 text-center">
+                    <img src="me.jpg" alt="The Artist" class="img-fluid rounded-circle artist-photo custom-border shadow-lg">
+                </div>
+                <div class="col-md-7 text-md-start text-center">
+                    <p class="lead text-secondary-emphasis">
+                        My journey into the world of art began at the tender age of 7, inspired by my father. Since then, art has been more than just a passion; it's a profound way for me to connect, communicate, and inspire.
+                    </p>
+                    <p class="lead text-secondary-emphasis">
+                        My works often explore themes of **portraiture**, capturing the essence of my subjects with intricate details and expressive shading. Each stroke aims to tell a story, inviting viewers to delve deeper into the emotion and character portrayed.
+                    </p>
+                    <p class="lead text-secondary-emphasis">
+                        Thank you for visiting my portfolio. I invite you to explore my gallery and experience the stories behind my creations. I hope my art resonates with you as much as it does with me.
+                    </p>
+                    <div class="social-links mt-4 d-flex justify-content-center justify-content-md-start gap-4">
+                        <a href="https://www.facebook.com/share/1A567wNu4G/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-decoration-none custom-social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/e1ysian34?igsh=MWpobzNxMmhpN2p0ZA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-decoration-none custom-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.threads.net/@e1ysian34" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="text-decoration-none custom-social-icon"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="gallery" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 custom-section-heading">Gallery</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 gallery-grid">
+            <div class="col-md-6 col-lg-4 gallery-item art design" data-category="art design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="1.jpg" class="img-fluid" alt="Charcoal Portrait 1">
+                </div>
+            </div>
+            <div class="col gallery-item commercial mockup" data-category="commercial mockup">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="2.jpg" class="img-fluid" alt="Charcoal Portrait 2">
+                </div>
+            </div>
+            <div class="col gallery-item photography" data-category="photography">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="3.jpg" class="img-fluid" alt="Charcoal Portrait 3">
+                </div>
+            </div>
+            <div class="col gallery-item tech design" data-category="tech design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="4.jpg" class="img-fluid" alt="Charcoal Portrait 4">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="5.jpg" class="img-fluid" alt="Charcoal Portrait 5">
+                </div>
+            </div>
+            <div class="col gallery-item commercial" data-category="commercial">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="6.jpg" class="img-fluid" alt="Charcoal Portrait 6">
+                </div>
+            </div>
+            <div class="col gallery-item design" data-category="design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="7.jpg" class="img-fluid" alt="Charcoal Portrait 7">
+                </div>
+            </div>
+            <div class="col gallery-item photography mockup" data-category="photography mockup">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="8.jpg" class="img-fluid" alt="Charcoal Portrait 8">
+                </div>
+            </div>
+            <div class="col gallery-item tech" data-category="tech">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="9.jpg" class="img-fluid" alt="Charcoal Portrait 9">
+                </div>
+            </div>
+            <div class="col gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="10.jpg" class="img-fluid" alt="Charcoal Portrait 10">
+                </div>
+            </div>
+            <div class="col gallery-item commercial" data-category="commercial">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="11.jpg" class="img-fluid" alt="Charcoal Portrait 11">
+                </div>
+            </div>
+            <div class="col gallery-item design" data-category="design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="12.jpg" class="img-fluid" alt="Charcoal Portrait 12">
+                </div>
+            </div>
+            <div class="col gallery-item photography" data-category="photography">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="13.jpg" class="img-fluid" alt="Charcoal Portrait 13">
+                </div>
+            </div>
+            <div class="col gallery-item tech" data-category="tech">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="14.jpg" class="img-fluid" alt="Charcoal Portrait 14">
+                </div>
+            </div>
+            <div class="col gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="15.jpg" class="img-fluid" alt="Charcoal Portrait 15">
+                </div>
+            </div>
+            <div class="col gallery-item commercial" data-category="commercial">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="16.jpg" class="img-fluid" alt="Charcoal Portrait 16">
+                </div>
+            </div>
+            <div class="col gallery-item design" data-category="design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="17.jpg" class="img-fluid" alt="Charcoal Portrait 17">
+                </div>
+            </div>
+            <div class="col gallery-item photography" data-category="photography">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="18.jpg" class="img-fluid" alt="Charcoal Portrait 18">
+                </div>
+            </div>
+            <div class="col gallery-item tech" data-category="tech">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="19.jpg" class="img-fluid" alt="Charcoal Portrait 19">
+                </div>
+            </div>
+            <div class="col gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="20.jpg" class="img-fluid" alt="Charcoal Portrait 20">
+                </div>
+            </div>
+            <div class="col gallery-item commercial" data-category="commercial">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="21.jpg" class="img-fluid" alt="Charcoal Portrait 21">
+                </div>
+            </div>
+            <div class="col gallery-item design" data-category="design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="22.jpg" class="img-fluid" alt="Charcoal Portrait 22">
+                </div>
+            </div>
+            <div class="col gallery-item photography" data-category="photography">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="23.jpg" class="img-fluid" alt="Charcoal Portrait 23">
+                </div>
+            </div>
+            <div class="col gallery-item tech" data-category="tech">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="24.jpg" class="img-fluid" alt="Charcoal Portrait 24">
+                </div>
+            </div>
+            <div class="col gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="25.jpg" class="img-fluid" alt="Charcoal Portrait 25">
+                </div>
+            </div>
+            <div class="col gallery-item commercial" data-category="commercial">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="26.jpg" class="img-fluid" alt="Charcoal Portrait 26">
+                </div>
+            </div>
+            <div class="col gallery-item design" data-category="design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="27.jpg" class="img-fluid" alt="Charcoal Portrait 27">
+                </div>
+            </div>
+            <div class="col gallery-item photography" data-category="photography">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="28.jpg" class="img-fluid" alt="Charcoal Portrait 28">
+                </div>
+            </div>
+            <div class="col gallery-item tech" data-category="tech">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="29.jpg" class="img-fluid" alt="Charcoal Portrait 29">
+                </div>
+            </div>
+            <div class="col gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="30.jpg" class="img-fluid" alt="Charcoal Portrait 30">
+                </div>
+            </div>
+            <div class="col gallery-item commercial" data-category="commercial">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="31.jpg" class="img-fluid" alt="Charcoal Portrait 31">
+                </div>
+            </div>
+            <div class="col gallery-item design" data-category="design">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="32.jpg" class="img-fluid" alt="Charcoal Portrait 32">
+                </div>
+            </div>
+            <div class="col gallery-item photography" data-category="photography">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="33.jpg" class="img-fluid" alt="Charcoal Portrait 33">
+                </div>
+            </div>
+            <div class="col gallery-item tech" data-category="tech">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="34.jpg" class="img-fluid" alt="Charcoal Portrait 34">
+                </div>
+            </div>
+            <div class="col gallery-item art" data-category="art">
+                <div class="gallery-item-content shadow-sm rounded-3">
+                    <img src="35.jpg" class="img-fluid" alt="Charcoal Portrait 35">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 custom-section-heading">What Others Say</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm custom-card-hover">
+                        <div class="card-body text-center d-flex flex-column">
+                            <p class="card-text text-secondary-emphasis fst-italic mb-auto">"Ang ganda ng mga drawings mo, sana ako dinnn" 
+</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4">
+                                <img src="https://i.pinimg.com/736x/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg" alt="Client 1" class="rounded-circle custom-client-avatar me-3">
+                                <span class="fw-bold text-primary">— Mark A. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm custom-card-hover">
+                        <div class="card-body text-center d-flex flex-column">
+                            <p class="card-text text-secondary-emphasis fst-italic mb-auto">"Grabe yung details at emotions sa mga obra mo. Pagpatuloy mo lang 'yan!"
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center mt-4">
+                                <img src="https://i.pinimg.com/736x/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg" alt="Client 2" class="rounded-circle custom-client-avatar me-3">
+                                <span class="fw-bold text-primary">— Sarah B. 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm custom-card-hover">
+                        <div class="card-body text-center d-flex flex-column">
+                            <p class="card-text text-secondary-emphasis fst-italic mb-auto">" Ang angas ng gawa mo p're. Kahit na 'di ako marunong, naaappreciate ko yung mga drawings mo."</p>
+                            <div class="d-flex align-items-center justify-content-center mt-4">
+                                <img src="https://i.pinimg.com/736x/d2/98/4e/d2984ec4b65a8568eab3dc2b640fc58e.jpg" alt="Client 3" class="rounded-circle custom-client-avatar me-3">
+                                <span class="fw-bold text-primary">— John Michael T.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 custom-section-heading">Contact Me</h2>
+            <p class="lead text-center mb-5 text-secondary-emphasis">If you're interested in commissioning a piece, collaborating, or simply have an inquiry, please feel free to reach out. I'd love to hear from you!</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <form action="#" method="post" class="p-4 p-md-5 bg-white rounded shadow-lg custom-form-shadow">
+                        <div class="mb-4">
+                            <label for="name" class="form-label visually-hidden">Your Name</label>
+                            <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label visually-hidden">Your Email</label>
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label visually-hidden">Your Message</label>
+                            <textarea class="form-control form-control-lg" id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn custom-btn btn-lg">Send Message <i class="fas fa-paper-plane ms-2"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-3">&copy; 2024 Edrian A. Bagohara. All rights reserved.</p>
+            <div class="footer-social-links d-flex justify-content-center gap-4">
+                <a href="https://www.facebook.com/share/1A567wNu4G/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-white custom-social-icon-footer"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/e1ysian34?igsh=MWpobzNxMmhpN2p0ZA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-white custom-social-icon-footer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.threads.net/@e1ysian34" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="text-white custom-social-icon-footer"><i class="fas fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        const gridItems = document.querySelectorAll('.grid-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeButton = document.querySelector('#lightbox .close-button');
+
+        gridItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imageSrc = item.getAttribute('data-image');
+                lightboxImg.src = imageSrc;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeButton.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = '';
+        });
+
+        lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+
+    </script>
+
+    </body>
+</html>

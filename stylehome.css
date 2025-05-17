@@ -1,0 +1,260 @@
+
+:root {
+    /* Custom Color Variables - Bootstrap uses its own theme colors, but these can be used for custom elements */
+    --custom-primary-color: #333; /* Dark Charcoal */
+    --custom-secondary-color: #777; /* Light Charcoal/Grey */
+    --custom-accent-color: #b08d57; /* Muted Gold/Bronze for accents */
+    --custom-text-color-dark: #333;
+    --custom-text-color-light: #f5f5f5;
+    --custom-card-background: #ffffff;
+    --custom-border-color: #ddd;
+    --custom-shadow-color: rgba(0, 0, 0, 0.1);
+
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--custom-text-color-dark);
+    scroll-behavior: smooth;
+    padding-top: 76px; /* Adjust for fixed navbar height */
+}
+
+/* Custom Navbar Styling */
+.navbar {
+    background-color: var(--custom-primary-color) !important; /* Override Bootstrap bg-dark */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-brand-font {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--custom-text-color-light) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--custom-text-color-light) !important;
+    font-weight: 400;
+    font-size: 1.05rem;
+    position: relative;
+    transition: color 0.3s ease;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--custom-accent-color);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--custom-accent-color);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--custom-accent-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('hero-bg.jpg') no-repeat center center/cover;
+    min-height: 70vh;
+    padding: 8rem 2rem;
+}
+
+.custom-heading-font {
+    font-family: var(--font-heading);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3.8rem; /* Desktop default */
+}
+
+@media (max-width: 768px) {
+    .custom-heading-font {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-heading-font {
+        font-size: 2rem;
+    }
+}
+
+/* Animation for Hero Content */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.animate-fade-in.delay-1 {
+    animation-delay: 0.3s;
+}
+
+.animate-fade-in.delay-2 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.custom-btn {
+    background-color: var(--custom-accent-color);
+    color: var(--custom-text-color-light);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-btn:hover {
+    background-color: var(--custom-primary-color); /* Darker accent on hover */
+    color: var(--custom-text-color-light); /* Keep text color */
+    transform: translateY(-3px);
+}
+
+/* Section Headings */
+.custom-section-heading {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--custom-primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+.custom-section-heading::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: var(--custom-accent-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 2px;
+}
+
+/* Testimonial Section Customizations */
+
+/* Styling for the client avatar */
+.custom-client-avatar {
+    width: 60px; /* Set a fixed width for the avatar */
+    height: 60px; /* Set a fixed height for the avatar */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 2px solid var(--bs-primary); /* Add a subtle border matching your primary color */
+    /* Assuming --bs-primary is defined in your Bootstrap variables or you can replace with a specific color like #0d6efd */
+}
+
+/* Custom card hover effect */
+.custom-card-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-card-hover:hover {
+    transform: translateY(-5px); /* Lifts the card slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important; /* A more pronounced shadow on hover */
+    /* !important is used here to override Bootstrap's default shadow-sm on hover if needed */
+}
+
+/* Optional: Adjust card text if needed, though Bootstrap classes handle most of it */
+.card-text.text-secondary-emphasis.fst-italic {
+    font-size: 1.1em; /* Slightly larger font for the quote */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Adjust heading if you have a custom-section-heading class */
+.custom-section-heading {
+    /* Example: Add some letter spacing or custom font family */
+    letter-spacing: 1px;
+    font-weight: 700;
+    /* You can define a custom font family here if you have one */
+    /* font-family: 'Your Custom Font', sans-serif; */
+}
+
+/* About Section */
+.artist-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid var(--custom-accent-color);
+    transition: transform 0.4s ease;
+}
+
+.artist-photo:hover {
+    transform: scale(1.03) rotate(2deg);
+}
+
+.custom-border {
+    border: 5px solid var(--custom-accent-color); /* Matches artist-photo border */
+}
+
+.custom-social-icon {
+    color: var(--custom-primary-color) !important; /* Override Bootstrap default link color */
+    font-size: 1.8rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-social-icon:hover {
+    color: var(--custom-accent-color) !important;
+    transform: translateY(-5px);
+}
+
+/* Gallery Section */
+
+.gallery-item-content {
+    position: relative;
+    overflow: hidden;
+    /* This creates the card-like background for each item */
+    background-color: #fff;
+    border: 1px solid #e0e0e0; /* Subtle border like in the example */
+    /* Padding to give some space around the image if desired, or let image fill */
+    padding: 0; /* Adjust if you want padding inside the card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item-content:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.gallery-item-content img {
+    width: 100%;
+    height: 250px; /* Adjust as needed for consistent image height */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block; /* Removes extra space below image */
+}
+
+/* Filter Buttons Styling */
+.filter-button {
+    margin: 5px;
+    border-radius: 20px; /* Pill-shaped buttons */
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-button.active {
+    background-color: #343a40; /* Dark background for active button */
+    color: #fff;
+    border-color: #343a40;
+}
+
+.filter-button:hover:not(.active) {
+    background-color: #e2e6ea; /* Light background on hover for inactive buttons */
+    color: #343a40;
+}
